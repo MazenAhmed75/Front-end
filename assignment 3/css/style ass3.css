@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+section.home {
+  background-image: url(../the-town-bg-01.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav {
+  size: 90%;
+  color: white;
+}
+
+h3 {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+  font-size: 30px;
+}
+
+ul {
+  display: inline-block;
+  width: 48%;
+  font-size: 30px;
+}
+
+li {
+  padding: 10px;
+  margin: 10px;
+  list-style: none;
+  display: inline-block;
+}
+section li:hover {
+  color: gray;
+}
+section.home h3:hover {
+  color: gray;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 300px;
+}
+p {
+  text-align: center;
+  font-size: 30px;
+  line-height: 50px;
+}
+.home i {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 30px;
+  font-size: 40px;
+  padding-top: 200px;
+}
+
+/* end of home style */
+
+div {
+  width: 48%;
+  display: inline-block;
+  text-align: center;
+}
+
+#intro h2 {
+  font-size: 50px;
+  color: cyan;
+}
+
+div p {
+  text-align: left;
+  color: #8f8f8f;
+}
+.fade {
+  font-weight: bolder;
+}
+button {
+  padding: 15px 35px;
+  background-color: #3496d8;
+  display: inline-block;
+  border-radius: 40px;
+  font-size: 20px;
+  color: white;
+  margin-top: 40px;
+}
+
+.bus,
+.bike,
+.building {
+  width: 30%;
+  padding: auto;
+  margin: auto;
+  line-height: 30px;
+}
+.bus i,
+.bike i,
+.building i {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 30px;
+  font-size: 40px;
+}
+.bus p,
+.bike p,
+.building p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #8f8f8f;
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
+.bus h3,
+.bike h3,
+.building h3 {
+  color: cyan;
+}
+
+/* end of intro style */
+
+.work {
+  text-align: center;
+}
+.work div {
+  display: inline-block;
+  height: 100%;
+  width: 15%;
+}
+
+/* end of work style */
+.contact {
+  background-image: url(../the-town-bg-02.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.contact i {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 30px;
+  font-size: 40px;
+}
+
+.contact div p {
+  background-color: aqua;
+  display: inline;
+  font-size: 15px;
+}
+
+/* end of contact style */

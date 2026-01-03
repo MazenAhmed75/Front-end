@@ -1,0 +1,961 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+--font-family: 'Roboto', sans-serif;
+}
+.container{
+    margin: auto;
+    width: 90%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/* end of general style */
+
+nav{
+    z-index: 10;
+    position: fixed;
+    background-color:#4e4e4e ;
+    width: 100%;
+    padding-left: 150px;
+    height: 70px;
+    font-family: var(--font-family);
+    
+}
+nav h3{
+    width: fit-content;
+    display: inline-block;
+    font-size: 24px;
+    transform: translateY(20px);
+    color: #ff305b;
+}
+.nav-ul{
+    width: 70%;
+    display: inline-block;
+    margin-left: 400px
+}
+nav ul{
+    display: inline-block;
+    font-size: 20px;
+    padding-left: 50px;
+    transform: translateY(-5px);
+}
+nav a{
+    text-decoration: none;
+}
+
+nav li{
+    color: white;
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+nav a :hover{
+    color: #ff305b;
+}
+
+/* end of nav style */
+#home{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(../slider-01.jpg);
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+  background-color: aqua;
+  text-align: center;
+}
+#home h1{
+    transform: translate(0px,400px);
+    font-size: 70px;
+    font-weight: 700;
+    color: #ff305b;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#home h1::after{
+    content: "";
+    display: block;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 26px;
+    margin-top: 10px;
+    animation-name: typing;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes typing {
+    0%{
+        content: "P|";
+    }
+    2%{
+        content: "Pr|";
+    }
+    4%{
+        content: "Pro|";
+    }
+    6%{
+        content: "Prof|";
+    }
+    8%{
+        content: "Profe|";
+    }
+    10%{
+        content: "Profes|";
+    }
+    12%{
+        content: "Profess|";
+    }
+    14%{
+        content: "Professi|";
+    }
+    16%{
+        content: "Professio|";
+    }
+    18%{
+        content: "Profession|";
+    }
+    20%{
+        content: "Professiona|";
+    }
+    22%{
+        content: "Professional|";
+    }
+    24%{
+        content: "Professional W|";
+    }
+    26%{
+        content: "Professional We|";
+    }
+    28%{
+        content: "Professional Web|";
+    }
+    30%{
+        content: "Professional Web D|";
+    }
+    32%{
+        content: "Professional Web De|";
+    }
+    34%{
+        content: "Professional Web De|";
+    }
+    36%{
+        content: "Professional Web Des|";
+    }
+    38%{
+        content: "Professional Web Desi|";
+    }
+    40%{
+        content: "Professional Web Desig|";
+    }
+    42%{
+        content: "Professional Web Design|";
+    }
+    44%{
+        content: "Professional Web Designe|";
+    }
+    46%{
+        content: "Professional Web Designer|";
+    }
+    48%{
+        content: "Professional Web Designe|";
+    }
+    50%{
+        content: "Professional Web Design|";
+    }
+    52%{
+        content: "Professional Web Desig|";
+    }
+    54%{
+        content: "Professional Web Desi|";
+    }
+    56%{
+        content: "Professional Web Des|";
+    }
+    58%{
+        content: "Professional Web De|";
+    }
+    62%{
+        content: "Professional Web Dev|";
+    }
+    64%{
+        content: "Professional Web Deve|";
+    }
+    66%{
+        content: "Professional Web Devel|";
+    }
+    68%{
+        content: "Professional Web Develo|";
+    }
+    70%{
+        content: "Professional Web Develop|";
+    }
+    72%{
+        content: "Professional Web Develope|";
+    }
+    74%{
+        content: "Professional Web Developer|";
+    }
+    76%{
+        content: "Professional Web Develope|";
+    }
+    78%{
+        content: "Professional Web Develop|";
+    }
+    80%{
+        content: "Professional Web Develo|";
+    }
+    82%{
+        content: "Professional Web Devel|";
+    }
+    84%{
+        content: "Professional Web Deve|";
+    }
+    86%{
+        content: "Professional Web Dev|";
+    }
+    87%{
+        content: "Professional Web De|";
+    }
+    88%{
+        content: "Professional Web D|";
+    }
+    89%{
+        content: "Professional Web |";
+    }
+    90%{
+        content: "Professional We|";
+    }
+    91%{
+        content: "Professional W|";
+    }
+    92%{
+        content: "Professional|";
+    }
+    93%{
+        content: "Professiona|";
+    }
+    94%{
+        content: "Profession|";
+    }
+    95%{
+        content: "Professio|";
+    }
+    96%{
+        content: "Professi|";
+    }
+    97%{
+        content: "Profess|";
+    }
+    98%{
+        content: "Prof|";
+    }
+    99%{
+        content: "Pro|";
+    }
+    100%{
+        content: "|";
+    }
+}
+
+#home h2{
+    transform: translate(0px,380px);
+    font-weight: 500;
+    line-height: 1.2;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+ 
+/* end of home style */
+#about{
+    margin: 100px 0;   
+}
+.photobox{
+    width: 25%;
+    margin-left: 150px;
+    padding: 10px 10px;
+    float: left;
+    position: relative;
+    top: -15px;
+    left: -15px;
+}
+.photobox::before{
+    content: "";
+    width: 93%;
+    height: 93%;
+    position: absolute;
+    border: 7px solid rgb(51, 51, 51);
+    border-radius: 4px;
+}
+.photo{
+    border-radius: 8px;
+    float: left;
+    transform: translateX(25px) translateY(25px);
+    overflow: hidden;
+}
+.photo img{
+    position: relative;
+    z-index: 1;
+}
+.layer{
+    z-index: 2;
+    position: absolute;
+    float: left;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    text-align: center;
+    opacity: 0.5;
+    transition: all 1s 0.5s;
+}
+.photo:hover .layer{
+    top: 0;
+}
+.layer i{
+    margin: 15px 10px;
+    margin-top: 200px;
+    font-size: 25px;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+.layer i:hover{
+    cursor: pointer;
+    color: #ff305b;
+}
+.des{
+    width: 50%;
+    float: left;
+    position: relative;
+    left: 100px;
+}
+.clr{
+    clear: both;
+}
+.des h2{
+position: relative;
+font-size: 32px;
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: 600;
+color: #4e4e4e;
+margin-bottom: 15px;
+margin-left: 10px;
+}
+.des h2::before{
+    content: "";
+    height: 21px;
+    width: 5px;
+    background-color: #ff305b;
+    position: absolute;
+    left: -12px;
+    top: 8px;
+    
+}
+.des p{
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #555;
+}
+.des hr{
+    margin-top: 20px;
+    border-top: 1px;
+    border-color: #777;
+    border-style: dotted;
+    margin-bottom: 20px;
+}
+.right , .left{
+    float: left;
+    width: 50%;
+    line-height: 25px;
+}
+.clr{
+    clear: both;
+}
+.des h5{
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #555;
+}
+.des .bold{
+    color: #212529;
+    font-weight: 700;
+}
+.des .cv{
+    float: left;
+    margin-top: 30px;
+    background-color: #ff305b;
+    font-size: 16px;
+    padding: 10px 10px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+}
+.des .cv:hover{
+    cursor: pointer;
+    background-color: #dc3545;
+}
+.des .hire{
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: #ff305b;
+    font-size: 16px;
+    padding: 10px 10px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+
+}
+.des .hire:hover{
+    cursor: pointer;
+    background-color: #dc3545;
+}
+
+
+/* end of about style */
+#services{
+    padding: 30px 0;
+    background-color: #f1f1f1;
+}
+.services h2{
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    color:#333;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+.services h2::after{
+    content: "";
+    width: 200px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 80px;
+    left: 610px;
+    
+}
+.services h2::before{
+    content: "";
+    width: 120px;
+    height: 8px;
+    position: absolute;
+    top: 75px;
+    left: 650px;
+    border-top: 1px solid #ff305b;
+    border-bottom: 1px solid #ff305b;
+}
+.uiholder,
+.devholder,
+.proholder,
+.uxholder{
+    float: left;
+    width: 22%;
+    margin-left: 3%;
+    margin-top: 80px;
+    transition: all 0.5s ease-in-out;
+}
+.uiholder:hover,
+.devholder:hover,
+.proholder:hover,
+.uxholder:hover{
+    background-color: white;
+    box-shadow: 0 5px 8px lightslategrey;
+}
+.uiholder:hover i,
+.devholder:hover i,
+.proholder:hover i,
+.uxholder:hover i{
+    transform: scale(1.2);
+}
+.uidesign{
+    text-align: center;
+    width: 100%;
+    margin: 50px 0;
+}
+.uidesign i{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #ff305b;
+    transition: all 0.5s ease-in-out;
+}
+.uidesign h5{
+    font-family: 'Source Sans Pro', "Roboto", sans-serif;
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.uidesign p{
+    color: #555;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', "Roboto", sans-serif;
+    line-height: 20px;
+}
+.development{
+    text-align: center;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.development i{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #ff305b;
+    transition: all 0.5s ease-in-out;
+}
+.development h5{
+    font-family: 'Source Sans Pro', "Roboto", sans-serif;
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.development p{
+    color: #555;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', "Roboto", sans-serif;
+    line-height: 20px;
+}
+.product{
+    text-align: center;
+    width: 100%;
+    margin: 50px 0;
+}
+.product i{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #ff305b;
+    transition: all 0.5s ease-in-out;
+}
+.product h5{
+    font-family: 'Source Sans Pro', "Roboto", sans-serif;
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.product p{
+    color: #555;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', "Roboto", sans-serif;
+    line-height: 20px;
+}
+.uxdesign{
+    text-align: center;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.uxdesign i{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #ff305b;
+    transition: all 0.5s ease-in-out;
+}
+.uxdesign h5{
+    font-family: 'Source Sans Pro', "Roboto", sans-serif;
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.uxdesign p{
+    color: #555;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', "Roboto", sans-serif;
+    line-height: 20px;
+}
+/* end of services style */
+#portfolio{
+    padding: 30px 0;
+ }
+#portfolio h2{
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    color:#333;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+#portfolio h2::after{
+    content: "";
+    width: 200px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 80px;
+    left: 610px;
+    
+}
+#portfolio h2::before{
+    content: "";
+    width: 120px;
+    height: 8px;
+    position: absolute;
+    top: 75px;
+    left: 650px;
+    border-top: 1px solid #ff305b;
+    border-bottom: 1px solid #ff305b;
+}
+#portfolio ul{
+    text-align: center;
+    list-style: none;
+}
+#portfolio li{
+    color: #4e4e4e;;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', "Roboto", sans-serif;
+    margin-top: 30px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.picholder{
+    width: 100%;
+    margin: 50px 50px;
+}
+.picbox{
+    position: relative;
+    width: 30%;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.picbox img{
+    z-index: 1;
+    float: left;
+}
+.portfoliolayer{
+    position: absolute;
+    z-index: 2;
+    float: left;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    text-align: center;
+    opacity: 0;
+    transition: all 1s 0.2s;
+}
+.picbox:hover .portfoliolayer{
+    cursor: pointer;
+    opacity: 0.6;
+}
+/* end of portfolio style */
+
+.icons{
+    background-color: #f1f1f1;
+}
+.iconbox{
+    text-align: center;
+    float: left;
+    width: 25%;
+    margin: 80px 0;
+}
+.iconbox i{ 
+    font-weight: 900;
+    font-size: 32px;
+    color: #ff305b;
+}
+.iconbox h5{
+    font-size: 25px;
+    color: #333;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', "Roboto", sans-serif;
+    margin: 12px 0;
+}
+.iconbox p{
+    font-size: 14px;
+    color: #555;
+    font-family: 'Source Sans Pro', "Roboto", sans-serif;
+}
+/* end of icons style */
+#feedback{
+    padding: 30px 0;
+    margin: 10px;
+ }
+#feedback h2{
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    color:#333;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+#feedback h2::after{
+    content: "";
+    width: 200px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 80px;
+    left: 610px;
+    
+}
+#feedback h2::before{
+    content: "";
+    width: 120px;
+    height: 8px;
+    position: absolute;
+    top: 75px;
+    left: 650px;
+    border-top: 1px solid #ff305b;
+    border-bottom: 1px solid #ff305b;
+}
+.feedholder{
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+    background-color: #f1f1f1;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.photoback{
+    background-color: #ff305b;
+    width: 18%;
+    float: left;
+    height: 100%;
+}
+.roundpic img{
+    width: 15%;
+    height: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 12px;
+}
+.feedcomment{
+    float: left;
+    width: 70%;
+    height: 100%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.feedcomment h4{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    color: #212529;
+    margin: 10px 0;
+}
+.feedcomment i{
+    float: left;
+    color: #777;
+    font-size: 16px;
+    font-weight: 600
+}
+.iconp{
+    color:#777;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.feedcomment p{
+    font-family: "Roboto", sans-serif;
+    color:#555;
+    margin-top: 10px;
+}
+.iconsi i{
+    color: gold;
+    margin-top: 20px;
+}
+/* end of feedback style */
+#blog{
+    margin: 20px 0;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+}
+#blog h2{
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    color:#333;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+#blog h2::after{
+    content: "";
+    width: 200px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 80px;
+    left: 610px;
+    
+}
+#blog h2::before{
+    content: "";
+    width: 120px;
+    height: 8px;
+    position: absolute;
+    top: 75px;
+    left: 650px;
+    border-top: 1px solid #ff305b;
+    border-bottom: 1px solid #ff305b;
+}
+.blogholder{
+    margin: 60px 0;
+}
+.blogbox{
+    float: left;
+    width: 31%;
+    margin-left: 30px;
+    background-color: white;
+}
+.blogcontent{
+    padding-left: 20px;
+}
+.blogbox p{
+    margin: 15px 0;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #555;
+}
+.blogbox h4{
+    color:#333;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    transition: all 0.5s ease-in-out;
+}
+.blogbox h4:hover{
+    cursor: pointer;
+    color: #ff305b;
+
+}
+.blogbox .read{
+    float: left;
+    font-family: 'Source Sans Pro', "Roboto", sans-serif;
+    font-size: 16px;
+    color: #4e4e4e;
+    transition: all 0.5s ease-in-out;
+}
+.blogbox i{
+    margin-top: 16px;
+    float: left;  
+}
+.readi{
+    transition: all 0.5s ease-in-out;
+    width: fit-content;
+}
+.readi p:hover{
+    color: #ff305b;
+    cursor: pointer;
+}
+.readi:hover{
+    cursor: pointer;
+    color: #ff305b;
+}
+/* end of blog style */
+#contact{
+    margin: 20px 0;
+    padding: 10px 0;
+}
+#contact h2{
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    color:#333;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+#contact h2::after{
+    content: "";
+    width: 200px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 80px;
+    left: 610px;
+    
+}
+#contact h2::before{
+    content: "";
+    width: 120px;
+    height: 8px;
+    position: absolute;
+    top: 75px;
+    left: 650px;
+    border-top: 1px solid #ff305b;
+    border-bottom: 1px solid #ff305b;
+}
+form{
+    width: 80%;
+    margin: auto;
+}
+.name,.email{
+    width: 48%;
+    height: 30px;
+    margin: 30px 10px;
+}
+.subject{
+    width: 98.5%;
+    height: 30px;
+    margin-bottom: 30px;
+    margin-left: 8px;
+}
+.textarea{
+    width: 98.5%;
+    height: 80px;
+    margin-left: 8px;
+}
+.message{
+        float: left;
+        margin-top: 30px;
+        background-color: #ff305b;
+        font-size: 16px;
+        padding: 10px 10px;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        border-radius: 5px;
+}
+.message:hover{
+        cursor: pointer;
+        background-color: #dc3545;
+}
+/* end of contact style */
+.footer{
+    text-align: center;
+    background-color: #333;
+    height: 130px;
+    
+}
+.footer i{
+    margin: 15px 10px;
+    margin-top: 50px;
+    font-size: 25px;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+.footer i:hover{
+    cursor: pointer;
+    color: #ff305b;
+}
+.footer p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+.footer span{
+    color: #ff305b;
+}
+.footer span:hover{
+    cursor: pointer;
+}
